@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER II</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #forcastdiv{
+            width: 100%;
+            margin-top: 20px;
+            background-color: #929292;
+            border: 1px solid #181818;
+            border-top: 0px solid rgb(186, 186, 186);
+        }
+        #forcast{
+            /* height: 35vh; */
+            width: 96vw;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            margin: auto;
+            background-color: rgb(186, 186, 186);
+            margin-bottom: 20px;
+            border-radius: 0px 0px 20px 20px;
+        }
+        #forcast div{
+            width: 12vw;
+            /* height: 35vh; */
+            border: 1px solid rgb(159, 159, 159);
+            /* margin: auto; */
+            margin-top: 20px;
+            text-align: center;
+            background-color: rgb(186, 186, 186);
+            color: black;
+        }
+        #forcast div h1{
+            margin: 10px;
+        }
+        #forcast div:first-child{
+            border-bottom-left-radius: 20px;
+        }
+        #forcast div:last-child{
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbarBox">
+        <div class="navbar">
+            <div class="leftNavbar">
+                <input type="text" id="city" placeholder="Enter City Name..."><button onclick="getWeather()" id="searchBtn">Search</button>
+            </div>
+            <div class="rightNavbar">
+                <img onclick="getPos()" id="currentLocation" src="https://cdn-icons-png.flaticon.com/512/8133/8133925.png" alt="">
+                <button>Different Weather?</button>
+                <div class="rightNavbarLastDiv">
+                    <button class="rightNavbarLastDivSelectedbutton" id="metric">Metric: ℃, m/s</button>
+                    <button id="imperial">Imperial: ℉, mph</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="content">
+            <!-- appended -->
+        </div>
+        <div class="location">
+            <iframe width="771" height="320" id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0"
+                marginwidth="0">
+            </iframe>
+        </div>
+    </div>
+    <div class="forcastdiv">
+        <div class="forcast">
+            <!-- appended -->
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>

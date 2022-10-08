@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbarBox {
+    background-color: #F2F2F2;
+
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 50px auto; */
+    align-items: center;
+    height: 120px;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+
+.rightNavbar {
+    display: flex;
+    /* justify-content: space-between; */
+    margin: auto;
+}
+
+#city {
+    padding: 10px 250px;
+    padding-left: 15px;
+    border-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border: none;
+    font-size: 20px;
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border: none;
+    font-size: 20px;
+    background-color: #48484B;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.location {
+    position: relative;
+    text-align: right;
+    height: 300px;
+    width: 771px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 300px;
+    width: 771px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+#iconTemp {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 60px;
+}
+
+#dt {
+    color: red;
+}
+
+#cityHeading {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#desc {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#descContent {
+    border-left: 1.5px solid red;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.rightNavbar img {
+    height: 20px;
+    margin: 8px 20px;
+    cursor: pointer;
+}
+
+.rightNavbar button {
+    padding: 5px 10px;
+    margin: 0px 20px;
+    border-radius: 5px;
+    font-size: medium;
+    background-color: #ECECED;
+    border: none;
+}
+
+.rightNavbarLastDiv {
+    background-color: #ECECED;
+    padding: 4px;
+    border-radius: 5px;
+    /* border: 2px solid black; */
+}
+
+.rightNavbarLastDiv > .rightNavbarLastDivSelectedbutton{
+    background-color: #fff;
+    padding: 7px 15px;
+}
+
+.rightNavbarLastDiv button {
+    margin: 0;
+}
